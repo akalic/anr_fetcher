@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="net-card-dl:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/net_card_dl_jar</output-path>
+    <root id="archive" name="net-card-dl.jar">
+      <element id="module-output" name="net-card-dl" />
+    </root>
+  </artifact>
+</component>
