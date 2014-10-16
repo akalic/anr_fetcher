@@ -90,36 +90,6 @@ public class XmlParser
                         cardNames.set(cardNames.size() - 1, cardNames.get(cardNames.size() - 1).concat(" " + m.group(1).replace("\"", "")).trim());
                 }
             }
-
-//            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-//            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-//            Document doc = dBuilder.parse(xmlFile);
-//            doc.getDocumentElement().normalize();
-//
-//            setID = doc.getDocumentElement().getAttribute("id");
-//            setName = sterilizeSetName(doc.getDocumentElement().getAttribute("name"));
-//
-//            if(setName.equals("Markers") || setName.equals("Promos"))
-//                return new Set(null, null, "Markers", "");
-//
-//            NodeList nList = doc.getElementsByTagName("card");
-//            for(int i = 0, subIndex = 0; i < nList.getLength(); i++, subIndex += 14)
-//            {
-//                Node node = nList.item(i);
-//                for(int j = 0; j < node.getChildNodes().getLength(); j++)
-//                {
-//                    Node child = node.getChildNodes().item(j);
-//                    NamedNodeMap map = child.getAttributes();
-//                    System.out.println("child " + map.getNamedItem("property"));
-//                }
-//                if(node.getNodeType() == Node.ELEMENT_NODE)
-//                {
-//                    Element element = (Element) node;
-//                    System.out.println(element.getAttribute("name"));
-//                    cardNames.add(element.getAttribute("name"));
-//                    octgnNames.add(element.getAttribute("id"));
-//                }
-//            }
             return new Set(cardNames, octgnNames, setName, setID);
         }
         catch(Exception e)
