@@ -154,15 +154,12 @@ public class ImageFetcher implements Runnable
     {
         JSONObject curr = null;
 
-        if (cardName.contains("Shi."))
-            cardName = cardName;
-
-
         for(int x = 0; x < json.length(); x++)
         {
             curr = (JSONObject) json.get(x);
             String jsonName = curr.getString("title");
 
+            //Normalizer is for special characters like in CT or Shi.Kyu (maybe more, but never ran into issues), still use formatStr() since there's always issues with names (Da gun, NeoTokyo, etc)
             if(formatStr(Normalizer.normalize(jsonName, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "")).toLowerCase().equals(Normalizer.normalize(cardName, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").toLowerCase()))
             {
                 if(cardName.equals("Corporate Troubleshooter"))

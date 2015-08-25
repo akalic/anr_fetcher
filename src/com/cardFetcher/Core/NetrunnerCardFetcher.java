@@ -33,8 +33,10 @@ public class NetrunnerCardFetcher
 {
     public static void main(String[] args)
     {
-        String setsPath = "C:\\Users\\jose.gonzalez\\Documents\\OCTGN\\GameDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
-        String imagesPath = "C:\\Users\\jose.gonzalez\\Documents\\OCTGN\\ImageDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
+        String setsPath = "GameDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
+        String imagesPath = "ImageDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
+//        String setsPath = "C:\\Users\\jose.gonzalez\\Documents\\OCTGN\\GameDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
+//        String imagesPath = "C:\\Users\\jose.gonzalez\\Documents\\OCTGN\\ImageDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
 //        String setsPath = "C:\\Users\\jgonzal2\\Documents\\OCTGN\\GameDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
 //        String imagesPath = "C:\\Users\\jgonzal2\\Documents\\OCTGN\\ImageDatabase\\0f38e453-26df-4c04-9d67-6d43de939c77\\Sets";
         try

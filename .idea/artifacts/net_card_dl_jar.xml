@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/net_card_dl_jar</output-path>
     <root id="archive" name="net-card-dl.jar">
       <element id="module-output" name="net-card-dl" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/json-20140107.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
